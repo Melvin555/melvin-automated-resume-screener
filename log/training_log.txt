@@ -1,0 +1,47 @@
+⚠️ Found 796 duplicate resumes. Removing duplicates for better generalization.
+⚠️ Warning: The following classes have fewer than 5 samples:
+Category
+Operations Manager    4
+Web Designing         4
+PMO                   3
+Name: count, dtype: int64
+📊 Classification Report:
+
+  _warn_prf(average, modifier, f"{metric.capitalize()} is", result.shape[0])
+                           precision    recall  f1-score   support
+
+                 Advocate       1.00      1.00      1.00         2
+                     Arts       1.00      1.00      1.00         1
+       Automation Testing       0.33      1.00      0.50         1
+               Blockchain       1.00      1.00      1.00         1
+         Business Analyst       0.50      1.00      0.67         1
+           Civil Engineer       1.00      1.00      1.00         1
+             Data Science       1.00      1.00      1.00         2
+                 Database       1.00      1.00      1.00         2
+          DevOps Engineer       0.00      0.00      0.00         1
+         DotNet Developer       0.00      0.00      0.00         2
+            ETL Developer       1.00      1.00      1.00         1
+   Electrical Engineering       1.00      1.00      1.00         1
+                       HR       1.00      1.00      1.00         2
+                   Hadoop       1.00      1.00      1.00         2
+       Health and fitness       1.00      1.00      1.00         1
+           Java Developer       0.75      1.00      0.86         3
+      Mechanical Engineer       0.00      0.00      0.00         1
+Network Security Engineer       1.00      1.00      1.00         1
+       Operations Manager       0.50      1.00      0.67         1
+                      PMO       0.00      0.00      0.00         1
+         Python Developer       0.25      1.00      0.40         1
+            SAP Developer       1.00      1.00      1.00         1
+                    Sales       1.00      1.00      1.00         1
+                  Testing       0.00      0.00      0.00         2
+            Web Designing       0.00      0.00      0.00         1
+
+                 accuracy                           0.76        34
+                macro avg       0.65      0.76      0.68        34
+             weighted avg       0.67      0.76      0.70        34
+
+✅ Cross-validated accuracy: 0.8316 ± 0.0553
+
+🧪 Sanity check (shuffled labels) accuracy: 0.0419
+
+✅ Model and vectorizer saved in /models
