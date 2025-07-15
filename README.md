@@ -5,7 +5,12 @@ This project uses Natural Language Processing (NLP) to automatically classify re
 ## 🚀 Features
 
 - Resume text classification
+- **Two ways to predict:**  
+  - Paste resume text directly into the app  
+  - Upload one or more resume files (PDF or DOCX) for batch classification
 - Interactive web app with Streamlit
+- Download batch prediction results as CSV
+- Displays prediction confidence for each result
 - Trained on real resume data
 
 ## 🛠 Tech Stack
@@ -103,42 +108,42 @@ Classes with very few samples (less than 5) may have unreliable metrics and may 
 ### Step-by-step
 
 1. **Start the app** using the command above.
-2. **Copy and paste the following sample resume** into the "Paste Resume Text Here" input box:
 
-    ```
-    John Doe
-    Email: john.doe@email.com
-    Phone: 123-456-7890
+2. **Choose your input method:**
+   - **Paste Resume Text:**  
+     Copy and paste your resume text into the "Paste Resume Text Here" input box.
+   - **Upload Resume Files:**  
+     Upload one or more resumes in **PDF** or **DOCX** format using the file uploader.  
+     - You can upload a single file for individual prediction, or multiple files for batch prediction.
+     - The app will extract the text and classify each resume automatically.
 
-    Professional Summary:
-    Experienced Python developer with 5+ years in backend development, data analysis, and automation. Proficient in Django, Flask, and REST APIs.
+3. **Click the appropriate button:**
+   - For pasted text, click **"Classify Pasted Text"**.
+   - For uploaded files, the app will display batch results automatically.
 
-    Skills:
-    - Python, Django, Flask
-    - SQL, PostgreSQL, MongoDB
-    - Data analysis, Pandas, NumPy
-    - Docker, Git, Linux
-
-    Work Experience:
-    Python Developer, Tech Solutions Inc.
-    June 2020 - Present
-    - Developed RESTful APIs for financial applications.
-    - Automated data pipelines and reporting tools.
-    - Collaborated with frontend and DevOps teams.
-
-    Education:
-    B.Sc. in Computer Science, University of Technology
-    ```
-
-3. **Click the "Classify" button.**
 4. **View the result:**  
-   The app will display:
-
-   ```
-   Predicted Job Category: Python Developer
-   ```
+   - For single predictions, the app will display the predicted job category and the model's confidence.
+   - For batch predictions, a table will show the filename, predicted category, and confidence for each file.
+   - You can also **download the batch results as a CSV file**.
 
 5. **Example UI Output:**  
    ![Prediction UI Example](figure/prediction_ui.png)
 
-This demonstrates how to use the app to classify a resume and what kind of output to expect.
+---
+
+## 📂 What Can Be Uploaded?
+
+- **Accepted formats:** PDF (`.pdf`) and Word Document (`.docx`)
+- **Single or multiple files:** Upload one or many resumes at once for batch processing.
+- **Content:** The resumes should contain relevant information such as:
+  - Name and contact info (optional)
+  - Professional summary
+  - Skills (e.g., programming languages, frameworks, tools)
+  - Work experience (job titles, companies, years)
+  - Education and certifications
+
+The more detailed and relevant your resume content, the more accurate the classification will be.
+
+---
+
+This demonstrates how to use the app to classify a resume by pasting text or uploading files, and what kind of output to expect.
